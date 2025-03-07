@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport och Spel Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="quizContainer">
+        <div id="startPage">
+            <h1>Sport och Spel Quiz</h1>
+            <p>Välkommen till quizen! Testa dina kunskaper inom Sport och Spel.</p>
+            <div class="category-buttons">
+                <button onclick="startQuiz('sport')">Sport Quiz</button>
+                <button onclick="startQuiz('spel')">Spel Quiz</button>
+            </div>
+        </div>
+
+        <div id="quizPage" style="display:none;">
+            <div id="questionContainer">
+                <h2 id="questionText"></h2>
+                <div id="answerButtons"></div>
+                <div id="nextButtonContainer"></div>
+            </div>
+        </div>
+
+        <div id="resultPage" style="display:none;">
+            <h2>Ditt resultat</h2>
+            <p id="scoreText"></p>
+            <button onclick="restartQuiz()">Starta om Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
